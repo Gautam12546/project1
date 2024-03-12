@@ -1,0 +1,224 @@
+ @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+    font-family: 'Libre Baskerville', serif;
+
+}
+
+
+:root{
+    --bg-color: #081b29;
+    --second-bg-color: #112e42;
+    --text-color: #ededed;
+    --main-color: #00abf0;
+  }
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+
+
+body{
+    background: var(--bg-color);
+    color: var(--text-color);
+}
+    
+/* }
+.maincontainer{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}  */
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.maincontainer {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-top: 50px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;   
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    height: 600px;
+    width: 1000px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    border-radius: 15px;
+}
+
+.navbar {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+    background-color: var(--bg-color);
+    color: white;
+    padding: 10px 0;
+    height: 60px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.btn {
+    cursor: pointer;
+    height: 40px;
+    width: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 0.01px solid white;
+    border-radius: 19px;
+}
+
+.btn:hover{
+    background-color: var(--second-bg-color);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px -50px 36px -28px inset;
+}
+
+.mainpage {
+    display: flex;
+    flex-direction: row;
+   
+    align-items: center;
+    margin-top: 40px;
+    background-color: var(--bg-color);
+    height: 430px;
+}
+
+.left {
+     
+    padding: 0 20px; 
+     margin-top: 20px;
+    width: 500px;
+}
+.name-input,.mail-contact{
+    display: flex;
+    flex-direction: row;
+    gap: 3px;
+}
+.info1 h1{
+    font-size: 2.6rem;
+    color: purple;
+}
+
+.info1 p{
+    font-size: 1.6rem;
+    margin: 2rem 0 3rem;
+}
+
+.abovetxt {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+.abovetxt h1{
+    color: purple;
+    font-size: 3.0rem;
+}
+.inputbox {
+    margin-bottom: 20px;
+}
+
+.input-field {
+    position: relative;
+    margin-bottom: 15px;
+}
+.input-fields input{
+    height: 100px;
+}
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+    background-color: var(--second-bg-color);
+    color: white;
+}
+
+input[type="text"]:focus {
+    border-color: #333;
+    
+}
+
+.focus {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 2px;
+    width: 0;
+    background-color: #333;
+    transition: width 0.4s ease;
+}
+
+.input-field input:focus + .focus {
+    width: 100%;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+}
+.btnx{
+    border: 1px solid white;
+}
+button:hover {
+    background-color: #555;
+}
+
+.right {
+   flex: 1;
+   
+    padding-left: 190px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    gap: 10px;
+}
+ .info3{
+    padding-top: 60px;
+ }
+.info1 h1, .info3 h1 {
+    margin-bottom: 20px;
+    color: purple;
+}
+
+.social-media {
+    display: flex;
+}
+
+.social-media div {
+    margin-right: 10px;
+}
+
+img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
